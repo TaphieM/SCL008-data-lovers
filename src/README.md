@@ -1,3 +1,5 @@
+# Indicadores LATAM
+
 ## Introducción
 
 La migración humana se puede afirmar como un proceso común y siempre presente a lo largo de la historia. Razones económicas, políticas, religiosas o de simple superación personal, han motivado durante siglos estos movimientos. Millones de personas se mueven en los puertos y aeropuertos, en las estaciones de tren, a través de fronteras vigiladas o no, y miles de ellas van en camino hacia algún nuevo destino al cual llamarán “hogar”, tal vez por siempre.
@@ -19,6 +21,9 @@ Son futuros migrantes o migrantes que buscan un nuevo cambio, les gusta evaluar 
 
 
 ## Diseño
+
+### Diagrama de Flujo
+![alt text]()
 
 ### Sketch de baja fidelidad
 ![alt text](Images/Baja-fidelidad.jpeg)
@@ -83,6 +88,14 @@ Te da un acercamiento a los indicadores y porqué deberías considerarlos para t
 
 [Videos Valeska]()
 
+
+
+## Deploy
+
+[Indicadores LATAM]()
+
+
+
 **Conclusiones** 
 
 - Pudimos observar que los usuarios se confunden en la página de inicio, ya que al apretar el botón "Inicio" pensaban que no funcionaba, aquí se sugirió agregar el titulo "Inicio" a la sección para evitar la confusión.
@@ -95,13 +108,16 @@ Te da un acercamiento a los indicadores y porqué deberías considerarlos para t
 
 - En la pantalla donde se muestra la lista de indicadores se debe poner el titulo del indicador que se seleccionó, ya qué lo olvidan y génera conflicto volver a buscarlo de nuevo.
 
+- En la tabla (año/indicador) en la parte de indicador debería ir al lado de cada indicador un comentario a que pertenece el dato (por ej. si es en % poderle al lado el simbolo)
 
-## Deploy
+- Los colores de la pagina, fueron bien recibidos, ya que les dan tranquilidad y hacen más entretenida una pagina con tanta información 
 
-[Indicadores LATAM]()
+- Fue de gran utilidad poder ordenar la tabla (año/indicador) de manera ascendente y descendente, ya que permite ver los punto con más indicadores disponibles, en caso de que en los primeros años no hubieran datos pero si en los últimos
 
 
 ## Planeación (Historias de usuario)
 
 [Tablero Trello](https://trello.com/invite/b/VwgQj4sx/e8953407ee31a5538753348ace769f28/data-lovers)
+
+
 
