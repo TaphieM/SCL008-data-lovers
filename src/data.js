@@ -131,7 +131,7 @@ const computeMedian=(arr)=>{
   if(newArr.length%2===1){
     return newArr[(newArr.length-1)/2];}
   else{
-    return (newArr[newArr.length/2] + newArr[newArr.length/2])/2;}
+    return (newArr[newArr.length/2] + newArr[newArr.length/2-1])/2;}
 
 }
 window.computeMedian=computeMedian;
