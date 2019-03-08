@@ -23,7 +23,7 @@ Son futuros migrantes o migrantes que buscan un nuevo cambio, les gusta evaluar 
 ## Diseño
 
 ### Diagrama de Flujo
-![alt text]()
+![alt text](Images/diaframaDeFlujo.jpg)
 
 ### Sketch de baja fidelidad
 ![alt text](Images/Baja-fidelidad.jpeg)
@@ -84,9 +84,9 @@ Te da un acercamiento a los indicadores y porqué deberías considerarlos para t
 
 ## Test Usabilidad
 
-[Videos Stephanie](https://useloom.com/share/folder/4474fe9dda3c4d73a6704687fdc5d718)
-
-[Videos Valeska]()
+[Videos Loom](https://useloom.com/share/folder/4474fe9dda3c4d73a6704687fdc5d718)
+[Video1 YouTube](https://youtu.be/z6haUDAdULY)
+[Video2 YouTube](https://youtu.be/HNxapmtIcn4)
 
 
 
@@ -115,7 +115,7 @@ Te da un acercamiento a los indicadores y porqué deberías considerarlos para t
 - Fue de gran utilidad poder ordenar la tabla (año/indicador) de manera ascendente y descendente, ya que permite ver los punto con más indicadores disponibles, en caso de que en los primeros años no hubieran datos pero si en los últimos
 
 
-## Planeación (Historias de usuario)
+## Planeación
 
 [Tablero Trello](https://trello.com/invite/b/VwgQj4sx/e8953407ee31a5538753348ace769f28/data-lovers)
 

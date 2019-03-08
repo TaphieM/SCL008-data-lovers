@@ -41,7 +41,6 @@ describe('sortData',() => {
   it('deberia ser una funcion',() => {
     assert.equal(typeof sortData,'function');
   });
-  it()
 });
 
 // probar la función ordenar
