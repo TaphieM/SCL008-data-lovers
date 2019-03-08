@@ -92,7 +92,7 @@ Te da un acercamiento a los indicadores y porqué deberías considerarlos para t
 
 ## Deploy
 
-[Indicadores LATAM]()
+[Indicadores LATAM](https://taphiem.github.io/SCL008-data-lovers/src/index.html)
 
 
 
