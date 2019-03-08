@@ -110,11 +110,14 @@ Te da un acercamiento a los indicadores y porqué deberías considerarlos para t
 
 - En la pantalla donde se muestra la lista de indicadores se debe poner el titulo del indicador que se seleccionó, ya qué lo olvidan y génera conflicto volver a buscarlo de nuevo.
 
+- Cuando se muestra la información histórica del indicador, se deben disminuir los decimales (redondeado).
+
 - En la tabla (año/indicador) en la parte de indicador debería ir al lado de cada indicador un comentario a que pertenece el dato (por ej. si es en % poderle al lado el simbolo)
 
 - Los colores de la pagina, fueron bien recibidos, ya que les dan tranquilidad y hacen más entretenida una pagina con tanta información 
 
 - Fue de gran utilidad poder ordenar la tabla (año/indicador) de manera ascendente y descendente, ya que permite ver los punto con más indicadores disponibles, en caso de que en los primeros años no hubieran datos pero si en los últimos
+
 
 
 ## Planeación
