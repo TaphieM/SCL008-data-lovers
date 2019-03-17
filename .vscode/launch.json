@@ -10,6 +10,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch Program",
+        //    "program": "/Users/TaphieM/Desktop/Laboratoria/Common-Core/Data-Lovers/SCL008-data-lovers/main.js"
             "program": "${workspaceFolder}\\src\\main.js"
         }
     ]

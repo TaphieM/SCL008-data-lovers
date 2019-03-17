@@ -2,125 +2,149 @@
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Indicadores Latam</title>
     <link rel="icon" type="image/png" href="Images/logo1.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
 
+  <body>
    <!-- Inicio de encabezado -->
-    <header id="head-bar">
-      <figure id="logo" >
+    <header id="head-bar" class="container-fluid">
+      <div class="row">
+       <div class="col-xs-12">
+       <figure id="logo">
         <img src="Images/logo1.png" class="img-responsive" alt="logo-Latam">
         <span>Indicadores LATAM</span> 
-      </figure>
-   </header>
+       </figure>
+      </div> 
+      </div> 
+    </header>
 
-   <div class="container-fluid">
-    <!--Empieza barra de menu-->
-    <nav id="bar" class="row">
-      <ol class="options-bar">
-        
-        <li id="navIndex"> <a href="#index">Inicio </a> </li>
-        <li id="navDefinition"> <a href="#definition">¿Qué es un indicador?</a>  </li>
-        <li id="navIndicators"> <a href="#indicators">Indicadores</a>  </li>
-
-      </ol>
+   <!--Empieza barra de menu-->  
+    <nav id="bar">
+     <div class="container-fluid">
+       <div class="row">
+        <div class="col-xs-12 ">
+          <ol class="options-bar"> 
+            <li id="navIndex"> <a href="#index">Inicio </a> </li>
+            <li id="navDefinition"> <a href="#definition">¿Qué es un indicador?</a>  </li>
+            <li id="navIndicators"> <a href="#indicators">Indicadores</a>  </li>
+          </ol>
+        </div>
+       </div>
+      </div>
     </nav>
 
         <!--Empieza el body-->
-    <main id="all-pages" >
-        
+<main> 
       <!--Empieza sección de inicio-->
-      <article id="index" class="index1">  
-          <figure class="image-first-screen">
-              <img src="Images/thinking.png"  class="img-responsive" alt="thinking-man">
-          </figure>  
-          <section class="index-text">
-          <p>
+      <article id="index" class="index1">
+        <div class="container-fluid">
+         <div class="row">
+          <div class="col-sm-12 col-lg-7" id="all-pages">
+            <h3>Inicio</h3>
+           <section class="index-text">
+           <p>
             Si en tus planes está mudarte dentro de Latinoamérica, ya sea por que te surgió la oportunidad, porque eres de espíritu aventurero o por una necesidad específica, 
-          Indicadores LATAM te ayuda  a tomar una decisión más informada en tu proceso de migración .
-          Aquí encontrarás información económica, social y demográfica relevante sobre Brasil, México, Chile y Perú.
-          </p>
-        </section>
+            Indicadores LATAM te ayuda  a tomar una decisión más informada en tu proceso de migración .
+            Aquí encontrarás información económica, social y demográfica relevante sobre Brasil, México, Chile y Perú.
+           </p>
+           </section>
+          </div>
+          <div class="col-md-12 col-lg-5">
+              <figure class="image-first-screen">
+                 <img src="Images/thinking.png"  class="img-responsive" alt="thinking-man">
+              </figure>  
+          </div>
+         </div> 
+        </div> 
       </article>
     
       <!--Empieza sección de definición--> 
-      <article id="definition" class="definition1">
-          <figure class="image-second-screen">
-            <img src="Images/comparing.PNG" class="img-responsive" alt="comparing-man">
-          </figure>
-          <h3>¿Qué es un indicador?</h3>
-          <section class="whatis-text">  
+    <article id="definition" class="definition1">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6">
+           <h3>¿Qué es un indicador?</h3>
+           <section class="whatis-text">  
             <p>
               Los indicadores son datos estadísticos que nos permiten entender cómo estuvo, está o puede estar la economía,
               demografía o diferentes fenómenos sociales de un país. Informarte sobre los indicadores del país a donde vas te ayudará 
               a tener una mejor perspectiva y conocimiento de este.
             </p>
-          </section>
-        </article>
+           </section>
+          </div>
+          <div class="col-sm-12 col-lg-6">
+              <figure class="image-second-screen">
+                <img src="Images/comparing.PNG" class="img-responsive" alt="comparing-man">
+              </figure>
+          </div>
+        </div>  
+      </div>
+    </article>
 
      <!--Empieza primer articulo de indices-->     
-       <article id="indicators" class="indicators1">
-            <h3>Indicadores</h3>
-            <article id="showDataScreen">
-              <span>Selecciona el indicador de tu interés:</span>    
-          <!--Sección que mostrará la lista de indicadores-->    
-             
-                  <button id="btOrderListAsc" class="btn btn-outline-dark">Z-A</button>
-                  <button id="btOrderListDesc" class="btn btn-outline-dark">A-Z</button>
-                  <select id="selectIndicators" size="15"></select>
-             
-          <!--Botón para ver el valor de los indices del indicador-->
-              <button type="button" id="indicator-button" class="btn btn-outline-dark">Ver Indicador</button>
+<article id="indicators" class="indicators1">
+
+    <div class="container-fluid">
+      <div class="row">
+           <div class="col-sm-12">
+             <h3>Indicadores</h3>
+             <!--Sección correspondiente a selectores de País y Género--> 
+           <article id="selectionScreen">
+                 <article class="country-selection">
+                    <p>Selecciona el país de tu interés:</p>
+                    <select id= "selectCountry">
+                      <option value="BRA">Brasil</option>
+                      <option value="CHL">Chile</option>
+                      <option value="MEX">México</option>
+                      <option value="PER">Perú</option>
+                   </select>
+                 </article> 
+                <!--Sección donde se imprime lista de indicadores--> 
+                 <article class="gender-selection">  
+                   <p>Elige tu género:</p>
+                   <select id="selectGender">
+                     <option value="Hombre">Hombre</option>
+                     <option value="Mujer">Mujer</option>       
+                   </select>
+                 </article>
+                <!--Botón para mostrar lista de indicadores-->
+                <button type="button" id="next-button" class="btn btn-outline-dark">Siguiente</button>  
             </article>
-      <!--Sección correspondiente a selectores de País y Género--> 
-            <article id="selectionScreen">
-                <section class="country-selection">
-                  <p>Selecciona el país de tu interés:</p>
-            
-                  <select id= "selectCountry" >
-                    <option value="BRA">Brasil</option>
-                    <option value="CHL">Chile</option>
-                    <option value="MEX">Mexico</option>
-                    <option value="PER">Perú</option>
-                  </select>
-                </section>
-            <!--Sección donde se imprime lista de indicadores-->
-                <section class="gender-selection">  
-                  <p>Elige tu género</p>
-                  <select id="selectGender">
-                    <option value="Hombre">Hombre</option>
-                    <option value="Mujer">Mujer</option>       
-                  </select>
-                </section>
-            <!--Botón para mostrar lista de indicadores-->
-                <button type="button" id="next-button" class="btn btn-outline-dark">Siguiente</button>
-            </article> 
-        <!--Empieza segundo artículo de indices-->
-            <article id="tableScreen">
-              <!--Sección donde se imprime el valor historico del indicador seleccionado-->
-              <div id="idStats"></div>
-              <button id="btOrderTableAsc" class="btn btn-outline-dark">ordenar ascendente</button>
-              <button id="btOrderTableDesc" class="btn btn-outline-dark">ordenar descendente</button>
-              <button type="button" id="average-button" class="btn btn-outline-dark">Estadisticas</button>
-          
-              
-             <!--  //<section class="showTable">  -->
-                <table align="center" id="tableIndicator" ></table>
-              <!-- </section> -->
-              
-              
+            <article id="showDataScreen"> 
+                  <span>Selecciona el indicador de tu interés:</span>    
+                   <!--Sección que mostrará la lista de indicadores-->    
+                     <button id="btOrderListAsc" class="btn btn-outline-dark">Z-A</button>
+                     <button id="btOrderListDesc" class="btn btn-outline-dark">A-Z</button>
+                     <select id="selectIndicators" size="15"></select>
+                   <!--Botón para ver el valor de los indices del indicador-->
+                     <button type="button" id="indicator-button" class="btn btn-outline-dark">Ver Indicador</button> 
+            </article>
+            <!--Empieza segundo artículo de indices-->
+           <article id="tableScreen">
+            <!--Sección donde se imprime el valor historico del indicador seleccionado-->
+                <div id="idStats"></div>
+                 <button id="btOrderTableAsc" class="btn btn-outline-dark">ordenar ascendente</button>
+                 <button id="btOrderTableDesc" class="btn btn-outline-dark">ordenar descendente</button>
+                 <button type="button" id="average-button" class="btn btn-outline-dark">Estadisticas</button>
+                 <button type="button" id="graphicButton" class="btn btn-outline-dark">Gráfica</button>
+                 <!--  //<section class="showTable">  -->
+                 <table id="tableIndicator" ></table>
+                 <div id="curve_chart" style="width: 900px; height: 500px"></div>
+                 <!-- </section> -->           
             </article>    
-          </article>
+            
+          </div>
+      </div>
+    </div>       
 
-    
-    
+  </article>
+</main>
+  
 
-    </main>
-    </div>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

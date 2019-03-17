@@ -1,65 +1,49 @@
-/* condicion inicial navegacion agrego Vale*/
-#indicators{
+/* condicion inicial navegacion*/
+#indicators, #definition{
   display: none;
 }
 #index{
   display: block;
 }
-#definition{
-  display: none;
+
+/*Imagen mapa de fondo*/
+
+  #index, #definition, #indicators{ 
+    background-image: url(Images/map_latin_america.png);    /* Ubicación de la imagen */
+    background-position: center center; /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+    background-repeat: no-repeat;/* Para que la imagen de fondo no se repita */
+    background-attachment: fixed; /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-size: contain;/* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    
 }
 
-/*Inicia sección de barra menu*/
-
-#selectIndicators{ 
-  
-  padding: 0 auto;   /*quitar marjen y padding de default*/
-  margin: 0 auto;
-  size: 15;
-   
-}
-
-
-#all-pages{
-  background-image: url(Images/map_latin_america.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  color:  #000000d7; 
-}
-
-/*Inicia sección de titulo y logo*/
+/*Sección de titulo y logo*/
 #logo span {  
     text-align: center;
-    width: 500px;
-    height: 102px;
-    font-size: 36px;
-    margin-left: 120px;  
+    font-size: 32px;
+    padding-left: 120px; 
 }
 
 #logo img{
-  width: 200px;
-  margin-left: 10px;
-  margin-top: 10px;
+  width: 150px;
 }
 
 #head-bar{ 
-  height: 200px;
   border: solid 2px #000000d7;
   background-color: rgba(93, 130, 165, 0.88);
 }
-/*Termina sección de titulo y logo*/
 
-/*Inicia sección barra*/
+/*Sección barra*/
 #bar{
-  border:solid #000000d7;
+  border:solid 2px #000000d7;
 }
 
 .options-bar li{
   list-style: none;     /*Quitarle a la lista los puntos */
   display: inline-block; /*Mostrar la barra en horizontal*/
-  margin-right: 200px;   /*Espacio entre las palabras de la barra*/
-  margin-left: 100px;
-  margin-top: 10px;
+  padding-right: 150px;   /*Espacio entre las palabras de la barra*/
+  padding-left: 150px;
+  padding-top: 10px;
 }
 
 .options-bar li a{  
@@ -67,63 +51,42 @@ text-decoration: none;       /*Quitarle el subrayado a las palabras de la barra*
 color: rgba(0, 0, 0, 0.753);
 font-size: 16px;
 }
-/*Termina sección de barra menu*/
 
-
-/* Inicia sección de inicio y que es un indicador*/
-.index-text{
-    width: 60%;
+/* Sección de inicio y que es un indicador y sus imágenes*/
+.index-text, .whatis-text{
     text-align: justify;
-    padding-left: 40px;
-    padding-top: 100px;
     font-family: Roboto;
-    font-size: 24px;           
+    font-size: 24px;
+    padding-top: 50px; 
+    padding-left: 30px;          
 }
 
-.definition1 h3 {
+.image-first-screen, .image-second-screen{  
+  margin-top: 40px;
+}
+
+.index1 h3, .definition1 h3, .indicators1 h3 {
   padding-top: 60px;
-  padding-left: 200px; 
+  text-align: center;
   
 }
 
-.whatis-text{
-    width: 60%;
-    text-align: justify;
-    padding-left: 40px;
-    padding-top: 40px;
-    font-family: Roboto;
-    font-size: 24px;
-}
 
-.image-first-screen  {  
-  float: right;
-  padding-top: 40px; 
-}
-
-.image-second-screen{
-  float:right;
-  padding-top:40px;
-}
-/*Temina sección de incio y que es un indicador*/
-
-/*Inicia sección donde se muestran los indicadores*/
-.indicators1 h3{ 
-  text-align: center; 
-  margin-top: 40px;
-  margin-bottom: 0px;
-}
-
-#selectionScreen{
-  margin-left: 467px;
-  left:50%;
-}
+/*Sección de selección de filtros*/
 .country-selection, .gender-selection{
-  text-align: justify;
+
+  text-align: center;
   padding-top: 30px;
   font-family: Roboto;
   font-size: 24px;           
 }
 
+#next-button{
+  margin-top: 50px;
+  margin-left: 580px; 
+}
+
+/*Sección lista de indicadores*/
 .indicators1 span{
   text-align: center; 
   font-family: Roboto;
@@ -131,45 +94,20 @@ font-size: 16px;
   margin-left: 117px;
 }
 
-#next-button{
-  margin-left: 150px;
-  margin-top: 50px;
-}
-
 #selectIndicators{
-  width: 1001px;
-  height: 350px;
+  /*width: 1001px;
+  height: 350px;*/
   margin-top: 5px;
-  margin-left: 117px;
+  margin-left: 30px;
   font-size: 14px;
  }
 
- #selectIndicators span{
-  float: right;
- }
-
  #indicator-button{
-  width: 151px;
   margin-left: 542px;
   margin-top: 20px;
 }
 
-
-/*Inicia la pantalla donde se muestra la tabla con el valor historico de los indicadores*/
-
-#tableScreen{
-  text-align: center; 
-  margin-top: 30px;
-}
-
-table, th, td {
-  padding-left:  30px;
-  padding-right: 30px;
-  margin-top: 30px;
-  border: 1px solid black;
-}
- 
- #btOrderListAsc{
+#btOrderListAsc{
   float: right;
   margin-right: 117px;
  }
@@ -178,219 +116,24 @@ table, th, td {
   float:right;
  }
 
- #idStats button{
-   float:right;
-   margin-right: 800px;
-   margin-left: 250px;
-   margin-top: 40px;
- }
- /* Extra small devices (portrait phones, less than 576px)*/
- @media (max-width: 575.98px) { 
-   #head-bar{
-      width: 500px;
-      height:300px;
-   }  
-   #bar{
-     widows: 300px;
-     height: 200px;
-   }
-  .options-bar{
-widows: 300px;
-height: 200;
-  }
-  }
+
+/*Seccion tabla con el valor historico de los indicadores*/
+
+#tableScreen{
+  text-align: center; 
+  margin-top: 30px;
+}
+
+table, th, td {
+  margin-top: 30px;
+  border: 1px solid black;
+}
+ 
+
+
+   
 
  
 
 
- /* desktop first, empezando por pantalla más grande*/
-
- @media screen and (max-width:1024px){
-  .options-bar li{
-    margin-right: 100px;   
-   }
-  .index-text{
-    font-size: 20px;
-    width: 50%;           
-  }
-
-.image-first-screen  {  
-  width: 50%;  
-}
-
-.definition1 h3 {
-  padding-top: 60px;
-  padding-left: 90px; 
-  
-}
-.whatis-text{
-  font-size: 20px;
-}
-
-.indicators1 h3{ 
-  font-size: 24px;
-}
-
-#selectionScreen{
-  margin-left: 362px;
-}
-.country-selection, .gender-selection{
-  font-size: 20px;           
-}
-#next-button{
-  margin-left: 90px;
-}
-.indicators1 span{
-  font-size: 20px;
-}
-
-#selectIndicators{
-  width: 800px;
-  margin-left: 100px;
-  font-size: 12px;
- }
-
- #indicator-button{
-  width: 151px;
-  margin-left: 400px;
-  margin-top: 20px;
-  font-size: 14px;
-}
-}
-  
-
- @media screen and (max-width:767px){
-  #logo span {  
-    font-size: 32px;
-    margin-left: 100px;  
-   }
-   #logo img{
-   width: 150px;
-   }
-   #head-bar{ 
-  height: 150px;
-   }
-   .options-bar li{
-    margin-right: 30px;
-   }
-   .options-bar li a{  
-    font-size: 14px;
-    }
-  .index-text{
-    font-size: 18px;         
-  }
-
-  /*.image-first-screen  {  
-  width: inherit;
-  max-width: 50%;  
-  }*/
-
-.definition1 h3 {
-  padding-top: 60px;
-  padding-left: 90px; 
-  
-}
-.whatis-text{
-  font-size: 20px;
-}
-
-.indicators1 h3{ 
-  font-size: 22px;
-}
-
-#selectionScreen{
-  margin-left: 300px;
-}
-.country-selection, .gender-selection{
-  font-size: 18px;           
-}
-#next-button{
-  margin-left: 50px;
-}
-.indicators1 span{
-  font-size: 18px;
-}
-
-#selectIndicators{
-  width: 600px;
-  margin-left: 70px;
-  font-size: 10px;
- }
-
- #indicator-button{
-  margin-left: 300px;
-}
-
-#tableScreen{
-  font-size: 10px;
-}   
-}
-
-
-@media screen and (max-width:480px){
-  #logo span {  
-    font-size: 28px;
-    margin-left: 40px;  
-   }
-   #logo img{
-   width: 120px;
-   }
-   #head-bar{ 
-  height: 120px;
-   }
-   .options-bar li{
-    margin-right: 30px;
-   }
-   .options-bar li a{  
-    font-size: 14px;
-    }
-  .index-text{
-    font-size: 18px;         
-  }
-
-  /*.image-first-screen  {  
-  width: inherit;
-  max-width: 50%;  
-  }*/
-
-.definition1 h3 {
-  padding-top: 60px;
-  padding-left: 90px; 
-  
-}
-.whatis-text{
-  font-size: 20px;
-}
-
-.indicators1 h3{ 
-  font-size: 22px;
-}
-
-#selectionScreen{
-  margin-left: 300px;
-}
-.country-selection, .gender-selection{
-  font-size: 18px;           
-}
-#next-button{
-  margin-left: 50px;
-}
-.indicators1 span{
-  font-size: 18px;
-}
-
-#selectIndicators{
-  width: 600px;
-  margin-left: 70px;
-  font-size: 10px;
- }
-
- #indicator-button{
-  margin-left: 300px;
-}
-
-#tableScreen{
-  font-size: 10px;
-}   
-}
-   
+ 

@@ -21,6 +21,8 @@ const indicatorButton=document.getElementById("indicator-button");
 const statsButton=document.getElementById("average-button");
 const btOrderTableAsc=document.getElementById("btOrderTableAsc");
 const btOrderTableDesc=document.getElementById("btOrderTableDesc");
+const graphicButton=document.getElementById("curve_chart");
+
 
 
             //secciones
@@ -77,7 +79,7 @@ const fillTable =(arr)=>{
                     "</tr>";
     arr.forEach(element => {
         htmlCode=htmlCode+ "<tr>"+
-        "<td>"+element[0]+"</td>"
+        "<td>"+parseInt(element[0])+"</td>"
 
         if(element[1]===""){
         htmlCode=htmlCode+  "<td>"+"-"+"</td>"+
@@ -88,7 +90,7 @@ const fillTable =(arr)=>{
             "</tr>";
         } 
     });
-    document.getElementById("tableIndicator").innerHTML=htmlCode;      
+    document.getElementById("tableIndicator").innerHTML=htmlCode;
 }
 
 
@@ -194,6 +196,12 @@ nextButton.addEventListener("click", ()=> {
     showDataScreen();
 }) 
 
+//const 
+  //  for(let i=0;i<arrayData.length;i++){
+    //    arrayData[(i)][0]=(parseInt(arrayData[(i)][0]));
+    //}
+
+    
 //Conecta el botón "ver indicador" para que muestre la tabla del indicador, esconde las primeras pantallas 
 indicatorButton.addEventListener("click", ()=> {    
     updateSelection();//actualiza las variables que guarda la selección del usuario
@@ -201,6 +209,7 @@ indicatorButton.addEventListener("click", ()=> {
     let arrayData=window.updateIndicatorData(actualCountry,actualIndexIndicator);
     fillTable(arrayData);//dibuja tabla
     showTableScreen();
+    
 })
 
 //Conecta el botón "Stats" y muestra el valor
@@ -224,3 +233,35 @@ btOrderTableAsc.addEventListener("click", ()=>{
     arrayData=window.sortData(arrayData, 0, "asc");
     fillTable(arrayData);//dibuja tabla
 })
+
+//graphicButton.addEventListener("click", ()=>{
+    
+
+
+
+
+    //google.charts.load('current', {'packages':['corechart']});
+    //google.charts.setOnLoadCallback(drawChart);
+
+    //function drawChart() {
+      //  updateSelection();//actualiza las variables que guarda la selección del usuario
+        //  let actualIndexIndicator=window.updateIndexIndicator(actualIndicator,actualCountry);
+          //let arrayData=window.updateIndicatorData(actualCountry,actualIndexIndicator);
+          //data = google.visualization.arrayToDataTable([ arrayData]);
+  
+        //};
+        //var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+        //chart.draw(data, options);
+        //document.getElementById("curve_chart").innerHTML=data;
+
+
+   //   }  
+    
+//})
+   
+
+    
+
+
+
+    
